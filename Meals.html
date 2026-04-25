@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meals</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="myFunctions.js"></script>
+</head>
+<div class="container">
+   
+
+<body>
+
+<h1>الوجبات المتوفرة</h1>
+
+<table>
+<tr>
+<th>اختيار</th>
+<th>تفاصيل</th>
+<th>السعر</th>
+<th>العنوان</th>
+<th>الرمز</th>
+</tr>
+
+<tr>
+<td><input type="checkbox" class="meal" value="200000"></td>
+<td><button onclick="toggleDetails('m1')">تفاصيل</button></td>
+<td>200000
+</td>
+<td>سمك مشوي</td>
+<td>SF-001</td>
+</tr>
+<tr id="m1" style="display:none;"><td colspan="5"> 
+    <P>المطبخ: سوري</P>
+    <p>تصنيف الطعام: مأكولات بحرية</p>
+    <P>المكونات: سمك أجاج 2 قطعة , ليمون , سماق , توابل بحرية , رز , طرطور</P>
+    <img src="سمك.webp">
+</td></tr>
+
+<tr>
+<td><input type="checkbox" class="meal" value="80000"></td>
+<td><button onclick="toggleDetails('m2')">تفاصيل</button></td>
+<td>80000</td>
+<td>شاورما عربي</td>
+<td>SF-002</td>
+</tr>
+<tr id="m2" style="display:none;"><td colspan="5">
+    <P>المطبخ: سوري</P>
+    <p>تصنيف الطعام: وجبات سريعة</p>
+    <P>المكونات: سندويشة حجم كبير , بطاطا , خبزة , توم , مخلل</P>
+    <img src="شاورما.jpg"> 
+</td></tr>
+
+<tr>
+<td><input type="checkbox" class="meal" value="150000"></td>
+<td><button onclick="toggleDetails('m3')">تفاصيل</button></td>
+<td>150000
+</td>
+<td>بيتزا فصول اكسترا</td>
+<td>SF-003</td>
+</tr>
+<tr id="m3" style="display:none;"><td colspan="5">
+    <P>المطبخ: إيطالي</P>
+    <p>تصنيف الطعام: وجبات سريعة</p>
+    <P>المكونات:فطر , زيتون , بصل , جبنة موزريلا , انشوفة , صلصة الطماطم</P>
+    <img src="pizza.webp">
+</td></tr>
+
+<tr>
+<td><input type="checkbox" class="meal" value="55000"></td>
+<td><button onclick="toggleDetails('m4')">تفاصيل</button></td>
+<td>55000</td>
+<td>شيز برغر</td>
+<td>SF-004</td>
+</tr>
+<tr id="m4" style="display:none;"><td colspan="5">
+    <P>المطبخ: أميركي</P>
+    <p>تصنيف الطعام: وجبات سريعة </p>
+    <P>المكونات: لحم , جبنة, بصل , طماطم , خس</P>
+    <img src="برغر2.jpg">
+ </td></tr>
+
+<tr>
+<td><input type="checkbox" class="meal" value="30000"></td>
+<td><button onclick="toggleDetails('m5')">تفاصيل</button></td>
+<td>30000</td>
+<td>فلافل فرط</td>
+<td>SF-005</td>
+</tr>
+<tr id="m5" style="display:none;"><td colspan="5">
+    <P>المطبخ: سوري</P>
+    <p>تصنيف الطعام: وجبات سريعة شعبية</p>
+    <P>المكونات: ليمون , طماطم , فلافل 8 أقراص , لبن , خبزر</P>
+    <img src="فلافل.webp"> </td></tr>
+
+</table>
+
+<br>
+<button onclick="showForm()">متابعة</button>
+
+<div id="formSection" style="display:none;">
+<form onsubmit="return validateForm()">
+
+الاسم الكامل:<br>
+<input type="text" id="name"><br>
+
+رقم الحساب:<br>
+<input type="text" id="account"><br>
+
+التاريخ:<br>
+<input type="date" id="date"><br>
+
+رقم الموبايل:<br>
+<input type="text" id="phone"><br>
+
+<br>
+<button type="submit">إرسال</button>
+
+</form>
+</div>
+
+<br>
+<a href="Index.html">Home</a> |
+<a href="AboutUs.html">About Us</a>
+
+</body>
+</div>
+</html>
